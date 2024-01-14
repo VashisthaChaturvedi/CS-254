@@ -74,10 +74,10 @@ void solve()
     int answer = INT32_MAX;
 
     // // Brute forcing all paths using dp;
-    // for (int i = 1; i <= n;i++)
-    // {
-    //     answer = min(answer, tsp(i, (1 << (n + 1)) - 1,n) + dist[i][1]);
-    // }
+    for (int i = 1; i <= n;i++)
+    {
+        answer = min(answer, tsp(i, (1 << (n + 1)) - 1,n) + dist[i][1]);
+    }
 
     cout << "Least cost path for the Travelling Salesman = " << answer<<endl;
     return;
