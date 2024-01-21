@@ -1,6 +1,9 @@
 // Vashistha Chaturvedi
 // Q1.b) Construct a sorted array C for A ∪ B
 
+// Time Complexity : O(nlogn);
+// Space Complexity : O(n);
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,6 +1,9 @@
 // Vashistha Chaturvedi
 // Q1.a) Construct a sorted array C by merging A and B
 
+// Time Complexity : O(n+m);
+// Space Complexity : O(n+m);
+
 
 #include <bits/stdc++.h>
 using namespace std;

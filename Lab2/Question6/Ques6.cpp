@@ -1,27 +1,46 @@
 // Vashistha Chaturvedi
 // Q6. Implement a Quick sort algorithm, where the pivot element is almost the median of the array
+
+// Time Complexity: O(nlogn)
+// Space Complexity: O(1)
+
 #include <bits/stdc++.h>
 using namespace std;
 
+int medianOfNumber(int a, int b, int c)
+{
+    if ((a <= b && b <= c) || (c <= b && b <= a))
+        return b;
+    else if ((b <= a && a <= c) || (c <= a && a <= b))
+        return a;
+    else
+        return c;
+}
+
 int partition(vector<int> &v, int start, int end)
 {
-    int pivot = v[end];
-    int i = start - 1;
+    int pivot = medianOfNumber(v[start], v[(start + end) / 2], v[end]);
+    int i = start - 1, j = end + 1;
 
-    for (int j = start; j <= end; j++)
+    while (true)
     {
-        if (v[j] < pivot)
+        i++;
+        while (v[i] < pivot)
         {
             i++;
-            int k = v[i];
-            v[i] = v[j];
-            v[j] = k;
+        }
+        j--;
+        while (v[j] > pivot)
+        {
+            j--;
+        }
+        if (i >= j)
+            return j;
+        else
+        {
+            swap(v[i], v[j]);
         }
     }
-    int k = v[i + 1];
-    v[i + 1] = v[j];
-    v[j] = k;
-    return (i + 1);
 }
 
 void quicksort(vector<int> &v, int start, int end)
@@ -49,20 +68,27 @@ int main()
         cout << "Answer for test case " << i << endl;
         solve();
     }
-
 }
-void solve(){
+void solve()
+{
 
-        int n;
+    int n;
     cin >> n;
     // input of vector size.
     vector<int> v(n);
     // input of vector.
+
     for (int i = 0; i < n; i++)
     {
         cin >> v[i];
     }
 
     quicksort(v, 0, (n - 1));
+    cout << "Sorted array after quick sort\n";
+    for (int i = 0; i < n; i++)
+    {
+        cout << v[i] << " ";
+    }
+    cout << "\n\n";
     // passing the starting and ending positions for quick sort.
 }

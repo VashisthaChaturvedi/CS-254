@@ -1,6 +1,9 @@
 // Vashistha Chaturvedi
 // Q1.c) Construct a sorted array C for A ∩ B.
 
+// Time Complexity : O(nlogn)
+// Space Complexity : O(n)
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -24,6 +27,7 @@ void solve(){
     int n, m;
     cin >> n >> m;
     map<int, int> nums;
+    map<int, int> nums2;
     // storing the elements of first array in map for quick access
     // while getting elements of 2nd array.
     for (int i = 0; i < n; i++)
@@ -38,9 +42,10 @@ void solve(){
         int k;
         cin >> k;
         // if the number is in the first array then find function will not return end iterator
-        if (nums.find(k) != nums.end())
+        if (nums.find(k) != nums.end()&&nums2[k]==0)
         {
             ans.push_back(k);
+            nums2[k]++;
         }
     }
 
