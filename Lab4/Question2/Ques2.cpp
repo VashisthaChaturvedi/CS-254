@@ -38,6 +38,9 @@ double median_sorted(vector<int> a1, vector<int> a2)
     }
     return 0;
 }
+
+// 2 3 4 
+// 1 4 6 7 
 void solve(){
     int n, m;
     cin >> n >> m;
