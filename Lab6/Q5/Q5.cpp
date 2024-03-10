@@ -35,6 +35,7 @@ void bridges(vector<vector<int>>&connections,int vertices){
             dfs_bridges(i, i, connections, discovery, low, bridges, time);
         }
     }
+    cout << "Bridges\n";
     for (int i = 0; i < bridges.size(); i++)
     {
         cout << bridges[i][0] << " " << bridges[i][1] << endl;
@@ -81,9 +82,11 @@ void articulation_point(vector<vector<int>>&connections,int vertices){
             dfs_ap(i, -1, connections, discovery, low, articulation_point, vis, time);
         }
     }
+    cout << "Articulation Points\n";
     for (int i = 0; i < articulation_point.size(); i++)
     {
-        cout << articulation_point[i] << endl;
+        if(articulation_point[i]==1)
+        cout << i << " ";
     }
     cout <<endl<<endl;
 }
