@@ -5,24 +5,23 @@ vector<pair<int, int>> movement = {{-1, 0}, {-1, 1}, {0, 1}, {1, 1}, {1, 0}, {1,
 int dfs(vector<string> &v, vector<vector<bool>> &vis, int i, int j)
 {
     // cout << i << " " << j << endl;
-    if (i >= vis.size() || j >= vis[0].size() || i < 0 || j < 0)
+    if(i>=vis.size()||j>=vis[0].size()||i<0||j<0)
         return 0;
-    if (v[i][j] == '0')
-    {
+    if(v[i][j]=='0'){
         vis[i][j] = true;
         return 0;
     }
-    if (vis[i][j] == true)
+    if(vis[i][j]==true)
         return 0;
-
+    
     int ans = 1;
     vis[i][j] = true;
-    for (auto move : movement)
-    {
-        ans += dfs(v, vis, i + move.first, j + move.second);
+    for (auto move:movement){
+        ans+=dfs(v, vis, i + move.first, j + move.second);
     }
     return ans;
 }
+
 
 void solve()
 {
@@ -41,8 +40,7 @@ void solve()
         {
             if (vis[i][j] == true)
                 continue;
-            if (v[i][j] == '0')
-            {
+            if(v[i][j]=='0'){
                 vis[i][j] = true;
                 continue;
             }
@@ -50,20 +48,19 @@ void solve()
                 maxm = max(maxm, dfs(v, vis, i, j));
         }
     }
-    cout << "Maximum region is of size: " << maxm << endl;
+    cout << "Maximum region is of size: " << maxm<<endl;
 }
 
 int main()
 {
-    freopen("input1.txt", "r", stdin);
-    freopen("output1.txt", "w", stdout);
+    freopen("input.in", "r", stdin);
+    freopen("output.out", "w", stdout);
     int test;
     cin >> test;
     for (int i = 0; i < test; i++)
     {
-        cout << "Answer for test " << (i + 1) << endl;
+        cout << "Answer for test " << (i+1) << endl;
         solve();
-        cout << endl
-             << endl;
+        cout << endl << endl;
     }
 }

@@ -1,100 +1,400 @@
-1
-32
-15
-14
-6
-22
-36
-1
-40
-39
-14
-13
-2
-27
-11
-24
-0
-32
-26
-12
-10
-2
-31
-8
-8
-6
-11
-7
-13
-9
-1
-8
-1
-5
-17
-15
-4
-18
-6
-7
-2
-6
-27
-6
-27
-5
-14
-24
-2
-1
-13
-3
-7
-1
-4
-13
-13
-8
-44
-14
-12
-9
-22
-6
-6
-21
-2
-1
-4
-29
-7
-3
-7
-2
-2
-31
-10
-0
-3
-8
-17
-10
-9
-42
-0
-2
-23
-9
-22
-6
-6
-0
-32
-5
-10
-1
-2
-26
-1
-25
+Answer for test 1
+Maximum region is of size: 1
+
+
+Answer for test 2
+Maximum region is of size: 79
+
+
+Answer for test 3
+Maximum region is of size: 0
+
+
+Answer for test 4
+Maximum region is of size: 0
+
+
+Answer for test 5
+Maximum region is of size: 1
+
+
+Answer for test 6
+Maximum region is of size: 0
+
+
+Answer for test 7
+Maximum region is of size: 0
+
+
+Answer for test 8
+Maximum region is of size: 0
+
+
+Answer for test 9
+Maximum region is of size: 1
+
+
+Answer for test 10
+Maximum region is of size: 0
+
+
+Answer for test 11
+Maximum region is of size: 0
+
+
+Answer for test 12
+Maximum region is of size: 0
+
+
+Answer for test 13
+Maximum region is of size: 0
+
+
+Answer for test 14
+Maximum region is of size: 0
+
+
+Answer for test 15
+Maximum region is of size: 0
+
+
+Answer for test 16
+Maximum region is of size: 0
+
+
+Answer for test 17
+Maximum region is of size: 1
+
+
+Answer for test 18
+Maximum region is of size: 0
+
+
+Answer for test 19
+Maximum region is of size: 0
+
+
+Answer for test 20
+Maximum region is of size: 0
+
+
+Answer for test 21
+Maximum region is of size: 0
+
+
+Answer for test 22
+Maximum region is of size: 0
+
+
+Answer for test 23
+Maximum region is of size: 1
+
+
+Answer for test 24
+Maximum region is of size: 0
+
+
+Answer for test 25
+Maximum region is of size: 0
+
+
+Answer for test 26
+Maximum region is of size: 0
+
+
+Answer for test 27
+Maximum region is of size: 0
+
+
+Answer for test 28
+Maximum region is of size: 0
+
+
+Answer for test 29
+Maximum region is of size: 0
+
+
+Answer for test 30
+Maximum region is of size: 0
+
+
+Answer for test 31
+Maximum region is of size: 0
+
+
+Answer for test 32
+Maximum region is of size: 0
+
+
+Answer for test 33
+Maximum region is of size: 2
+
+
+Answer for test 34
+Maximum region is of size: 1
+
+
+Answer for test 35
+Maximum region is of size: 0
+
+
+Answer for test 36
+Maximum region is of size: 1
+
+
+Answer for test 37
+Maximum region is of size: 0
+
+
+Answer for test 38
+Maximum region is of size: 0
+
+
+Answer for test 39
+Maximum region is of size: 0
+
+
+Answer for test 40
+Maximum region is of size: 0
+
+
+Answer for test 41
+Maximum region is of size: 0
+
+
+Answer for test 42
+Maximum region is of size: 0
+
+
+Answer for test 43
+Maximum region is of size: 0
+
+
+Answer for test 44
+Maximum region is of size: 0
+
+
+Answer for test 45
+Maximum region is of size: 1
+
+
+Answer for test 46
+Maximum region is of size: 0
+
+
+Answer for test 47
+Maximum region is of size: 0
+
+
+Answer for test 48
+Maximum region is of size: 0
+
+
+Answer for test 49
+Maximum region is of size: 0
+
+
+Answer for test 50
+Maximum region is of size: 0
+
+
+Answer for test 51
+Maximum region is of size: 1
+
+
+Answer for test 52
+Maximum region is of size: 0
+
+
+Answer for test 53
+Maximum region is of size: 0
+
+
+Answer for test 54
+Maximum region is of size: 0
+
+
+Answer for test 55
+Maximum region is of size: 2
+
+
+Answer for test 56
+Maximum region is of size: 0
+
+
+Answer for test 57
+Maximum region is of size: 0
+
+
+Answer for test 58
+Maximum region is of size: 51
+
+
+Answer for test 59
+Maximum region is of size: 0
+
+
+Answer for test 60
+Maximum region is of size: 0
+
+
+Answer for test 61
+Maximum region is of size: 0
+
+
+Answer for test 62
+Maximum region is of size: 1
+
+
+Answer for test 63
+Maximum region is of size: 1
+
+
+Answer for test 64
+Maximum region is of size: 0
+
+
+Answer for test 65
+Maximum region is of size: 0
+
+
+Answer for test 66
+Maximum region is of size: 0
+
+
+Answer for test 67
+Maximum region is of size: 0
+
+
+Answer for test 68
+Maximum region is of size: 0
+
+
+Answer for test 69
+Maximum region is of size: 0
+
+
+Answer for test 70
+Maximum region is of size: 0
+
+
+Answer for test 71
+Maximum region is of size: 0
+
+
+Answer for test 72
+Maximum region is of size: 0
+
+
+Answer for test 73
+Maximum region is of size: 0
+
+
+Answer for test 74
+Maximum region is of size: 0
+
+
+Answer for test 75
+Maximum region is of size: 1
+
+
+Answer for test 76
+Maximum region is of size: 0
+
+
+Answer for test 77
+Maximum region is of size: 0
+
+
+Answer for test 78
+Maximum region is of size: 0
+
+
+Answer for test 79
+Maximum region is of size: 65
+
+
+Answer for test 80
+Maximum region is of size: 0
+
+
+Answer for test 81
+Maximum region is of size: 0
+
+
+Answer for test 82
+Maximum region is of size: 0
+
+
+Answer for test 83
+Maximum region is of size: 1
+
+
+Answer for test 84
+Maximum region is of size: 0
+
+
+Answer for test 85
+Maximum region is of size: 0
+
+
+Answer for test 86
+Maximum region is of size: 0
+
+
+Answer for test 87
+Maximum region is of size: 0
+
+
+Answer for test 88
+Maximum region is of size: 1
+
+
+Answer for test 89
+Maximum region is of size: 0
+
+
+Answer for test 90
+Maximum region is of size: 0
+
+
+Answer for test 91
+Maximum region is of size: 0
+
+
+Answer for test 92
+Maximum region is of size: 0
+
+
+Answer for test 93
+Maximum region is of size: 0
+
+
+Answer for test 94
+Maximum region is of size: 0
+
+
+Answer for test 95
+Maximum region is of size: 0
+
+
+Answer for test 96
+Maximum region is of size: 0
+
+
+Answer for test 97
+Maximum region is of size: 0
+
+
+Answer for test 98
+Maximum region is of size: 0
+
+
+Answer for test 99
+Maximum region is of size: 0
+
+
+Answer for test 100
+Maximum region is of size: 0
+
+
