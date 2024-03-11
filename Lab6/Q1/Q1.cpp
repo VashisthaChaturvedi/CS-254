@@ -12,7 +12,7 @@ void getConnection(int vertices,int edges,vector<vector<int>>&connection, vector
 bool topologicalsort(vector<vector<int>> &connection, vector<int> &topologicalsort, vector<int>&dependancy){
     queue<int> zero_dependancy;
     // cout << "*"<<connection.size();
-    for (int i = 0; i <= connection.size();i++){
+    for (int i = 0; i <connection.size();i++){
         if(dependancy[i]==0){
             zero_dependancy.push(i);
         }
@@ -39,10 +39,10 @@ void solve(){
     cin >> vertices;
     cin >> edges;
     // cout << vertices << edges;
-    vector<vector<int>> connection(vertices + 1);
-    vector<int> dependancy(vertices + 1,0);
+    vector<vector<int>> connection(vertices );
+    vector<int> dependancy(vertices,0);
 
-    // getConnection(vertices, edges, connection, dependancy);
+    getConnection(vertices, edges, connection, dependancy);
     vector<int> topologicalSort;
     bool isSortable = topologicalsort(connection, topologicalSort, dependancy);
     if(!isSortable){
