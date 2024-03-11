@@ -45,18 +45,19 @@ def write_to_file(filename, connections):
 
 
 
-T = 1
+T = 20
 with open("input.in","w") as f:
-
+  f.write(str(T)+"\n")
   while T>0:
 
-    N = random.randint(0,10)
+    N = random.randint(0,50)
     M = random.randint(0,N*(N-1)/2)
     connections = generate_dag(N, M)
     f.write(str(N)+" "+str(M)+"\n")
     for edge in connections:
       f.write(edge+"\n")
       print("\n")
+    f.write("\n")
     T-=1
 
 
