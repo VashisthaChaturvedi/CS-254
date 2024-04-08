@@ -1,35 +1,68 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-vector<int> p;
-
-int find(int x) {
-    if(x==p[x]) return x;
-    return p[x] = find(p[x]);
+void solve();
+int main()
+{
+    freopen("0input.in", "r", stdin);
+    freopen("0output.out", "w", stdout);
+    int test;
+    cin >> test;
+    while(test--)
+    {
+        solve();
+    }
+}
+int find(int i, vector<int>&parent){
+    if(parent[i]==i){
+        return i;
+    }
+    return (parent[i] = find(parent[i], parent));
+}
+bool unionBySize(int i, int j,vector<int>&parent,vector<int>&sizes){
+    i = find(i, parent);
+    j = find(j, parent);
+    if(i==j){
+        return false;
+    }
+    if(sizes[j]>sizes[i]){
+        swap(i, j);
+    }
+    parent[j] = i;
+    sizes[i] += sizes[j];
+    return true;
 }
 
-bool unite(int u, int v) {
-    int x = find(u);
-    int y = find(v);
-    if(x==y) return false;
-    p[y]=x;  return true;
-}
-
-int main() {
-    array<int,3> e; int ans=0;
-    int n, m; cin >> n >> m;
-    int u, v, w; p.resize(n+1);
-    for(int i=0; i<n; ++i) p[i] = i;
-    priority_queue<array<int,3>> Q;
-    for(int i=0; i<m; ++i) {
-        cin >> u >> v >> w;
-        e = {w, u, v};
-        Q.push(e);
+void spanning_tree(vector<vector<int>> &edges,int n,int m){
+    vector<int> parent(n, -1);
+    vector<int> sizes(n, 1);
+    int ans = 0;
+    vector<pair<int, int>> tree;
+    sort(edges.begin(), edges.end());
+    for (int i = 0; i < n;i++){
+        parent[i] = i;
     }
-    while(!Q.empty()) {
-        auto [w_e, v1, v2] = Q.top();
-        Q.pop();
-        if(unite(v1,v2)) ans += w_e;
+    for(auto edge:edges){
+        bool b = unionBySize(edge[1], edge[2],parent,sizes);
+        if(b){
+            tree.push_back({edge[1], edge[2]});
+            ans += edge[0];
+        }
     }
-    cout << ans << "\n";
+    cout << "Maximum Spanning tree\n";
+    for (int i = 0; i < tree.size(); i++)
+    {
+        cout << tree[i].first << " " << tree[i].second<<endl;
+    }
+    cout << "Weight of maximum spanning tree " << ans << endl;
+} 
+void solve()
+{
+    int n, m;
+    cin >> n >> m;
+    vector<vector<int>> edges(m, vector<int>(3));
+    for (int i = 0;i<m;i++){
+        cin >> edges[i][1] >> edges[i][2] >> edges[i][0];
+    }
+    spanning_tree(edges, n,m);
+    return;
 }
