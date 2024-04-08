@@ -54,7 +54,6 @@ int union2(int i, int sum)
     if (x != y)
     {
         parent[x] = y;
-
         sum += edges[i].weight;
         edg++;
     }
@@ -66,34 +65,24 @@ int main()
     int V, E;
     V = 5;
     E = 8;
-
     initialise(V);
-
-    vector<int> source = {1, 3, 2, 3,
-                          2, 5, 1, 3};
-    vector<int> destination = {3, 4, 4,
-                               2, 5, 4, 2, 5};
-    vector<int> weights = {75, 51, 19,
-                           95, 42, 31, 9, 66};
+    vector<int> source = {1, 3, 2, 3, 2, 5, 1, 3};
+    vector<int> destination = {3, 4, 4, 2, 5, 4, 2, 5};
+    vector<int> weights = {75, 51, 19, 95, 42, 31, 9, 66};
     for (int i = 0; i < E; i++)
     {
         edges[i].src = source[i];
         edges[i].dest = destination[i];
         edges[i].weight = weights[i];
     }
-
     sort(edges, edges + E, cmp);
-
     int sum = 0;
     for (int i = 0; i < E; i++)
     {
         sum = union1(i, sum);
     }
-
     cout << "MST: " << sum << "\n";
-
     int sec_best_mst = INT_MAX;
-
     sum = 0;
     int j;
     for (j = 0; j < present.size(); j++)
@@ -119,7 +108,6 @@ int main()
         sum = 0;
     }
 
-    cout << "Second Best MST: "
-         << sec_best_mst << "\n";
+    cout << "Second Best MST: " << sec_best_mst << "\n";
     return 0;
 }
